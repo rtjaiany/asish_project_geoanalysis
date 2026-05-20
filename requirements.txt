@@ -1,0 +1,7 @@
+pandas
+geopy
+matplotlib
+seaborn
+jupyter
+jupyterlab
+tqdm
