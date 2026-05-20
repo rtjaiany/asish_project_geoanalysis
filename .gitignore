@@ -16,3 +16,6 @@ env/
 
 # OS generated files
 .DS_Store
+
+# Reference notebooks
+ageism2014.ipynb
