@@ -10,20 +10,12 @@ This project analyzes Twitter data to forecast and map discussions around gun vi
    pip install -r requirements.txt
    ```
 
-2. **Bounding Boxes Collection:**
-   Run the `collect_bboxes.py` script to fetch the bounding boxes for the target cities using OpenStreetMap's Nominatim API. This will generate a `bboxes.json` file in the `data/` directory.
+2. **Data Pipeline:**
+   The entire data processing pipeline (configuration, bounding box collection, spatial/temporal filtering, and keyword filtering) has been consolidated into a single Jupyter Notebook. Open Jupyter Lab and run:
    ```bash
-   python src/collect_bboxes.py
+   jupyter lab notebooks/data_processing_pipeline.ipynb
    ```
+   Adjust the `RAW_DATA_DIR` and `OUTPUT_DIR` variables in the first configuration cell to match the structure on your local machine or the Harvard FASRC cluster. Then, run all cells to execute the pipeline.
 
-3. **Data Configuration:**
-   Review `src/config.py` and adjust the `RAW_DATA_DIR` and `OUTPUT_DIR` paths to match the structure on your local machine or the Harvard FASRC cluster.
-
-4. **Running the Pipeline (Harvard HPC):**
-   A sample SLURM script is provided in `scripts/run_pipeline.sh`. To submit the pipeline to the cluster:
-   ```bash
-   sbatch scripts/run_pipeline.sh
-   ```
-
-5. **Analysis:**
-   After the pipeline completes, run the Jupyter Notebook in `notebooks/01_descriptive_analysis.ipynb` to visualize the filtered data.
+3. **Analysis:**
+   After the pipeline completes, run the descriptive analysis notebook to visualize the filtered data.
