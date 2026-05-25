@@ -5,3 +5,5 @@ seaborn
 jupyter
 jupyterlab
 tqdm
+requests
+folium
