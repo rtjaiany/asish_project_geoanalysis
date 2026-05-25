@@ -1,4 +1,4 @@
-# Gun Violence Twitter Forecasting
+# Asish's Project - Twitter Geoanalysis
 
 This project analyzes Twitter data to forecast and map discussions around gun violence. It specifically focuses on four mass shooting incidents, capturing social media reactions over a 5-day window ($\pm 2$ days) around each event, within the respective geographic bounding boxes.
 
