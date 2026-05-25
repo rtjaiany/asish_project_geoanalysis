@@ -3,6 +3,7 @@ data/
 *.csv
 *.json
 *.gz
+!data/processed/bounding_boxes_map.html
 
 # Python
 __pycache__/

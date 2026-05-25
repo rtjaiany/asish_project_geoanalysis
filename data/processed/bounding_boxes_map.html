@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_345b9bed359488325ec3f042ec66a838 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_345b9bed359488325ec3f042ec66a838" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_345b9bed359488325ec3f042ec66a838 = L.map(
+                "map_345b9bed359488325ec3f042ec66a838",
+                {
+                    center: [35.445127674999995, -98.1210252375],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da9564bfa84c76d1ae8989a7251cf09f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_da9564bfa84c76d1ae8989a7251cf09f.addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+            var rectangle_c07bd61f0b08a24bd94851a0e76d299b = L.rectangle(
+                [[28.99618250990991, -100.21571832715628], [29.71817909009009, -99.30871457284373]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_39d1ac43091a26fd88c3c0330a19786f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2628bf5ec2da64ad76f83aa495913a9 = $(`<div id="html_b2628bf5ec2da64ad76f83aa495913a9" style="width: 100.0%; height: 100.0%;">Uvalde, TX</div>`)[0];
+                popup_39d1ac43091a26fd88c3c0330a19786f.setContent(html_b2628bf5ec2da64ad76f83aa495913a9);
+            
+        
+
+        rectangle_c07bd61f0b08a24bd94851a0e76d299b.bindPopup(popup_39d1ac43091a26fd88c3c0330a19786f)
+        ;
+
+        
+    
+    
+            var marker_76600ce93d35379cb3614faf0c36ea6f = L.marker(
+                [29.357180800000002, -99.76221645000001],
+                {
+}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_f1492a4683cb439546f2e3a4da972cfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c574ef636f73985ca0392fc9be7e930a = $(`<div id="html_c574ef636f73985ca0392fc9be7e930a" style="width: 100.0%; height: 100.0%;">Uvalde, TX</div>`)[0];
+                popup_f1492a4683cb439546f2e3a4da972cfa.setContent(html_c574ef636f73985ca0392fc9be7e930a);
+            
+        
+
+        marker_76600ce93d35379cb3614faf0c36ea6f.bindPopup(popup_f1492a4683cb439546f2e3a4da972cfa)
+        ;
+
+        
+    
+    
+            var rectangle_31e50b07b27d89ef1650198841798723 = L.rectangle(
+                [[42.06217450990991, -87.97329966498407], [42.31239809009009, -87.63761253501593]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_5e12fb3233d04c4733a9406ea1e6b71e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaa49a08d1ba0a5219aba04fa80c594c = $(`<div id="html_aaa49a08d1ba0a5219aba04fa80c594c" style="width: 100.0%; height: 100.0%;">Highland Park, IL</div>`)[0];
+                popup_5e12fb3233d04c4733a9406ea1e6b71e.setContent(html_aaa49a08d1ba0a5219aba04fa80c594c);
+            
+        
+
+        rectangle_31e50b07b27d89ef1650198841798723.bindPopup(popup_5e12fb3233d04c4733a9406ea1e6b71e)
+        ;
+
+        
+    
+    
+            var marker_6f7ec945e0965de01560e71744a155f7 = L.marker(
+                [42.1872863, -87.8054561],
+                {
+}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_afd6007facfdab44001ff66e13b5c14d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4dec9e5b33289bb897fb5104f87e81a = $(`<div id="html_f4dec9e5b33289bb897fb5104f87e81a" style="width: 100.0%; height: 100.0%;">Highland Park, IL</div>`)[0];
+                popup_afd6007facfdab44001ff66e13b5c14d.setContent(html_f4dec9e5b33289bb897fb5104f87e81a);
+            
+        
+
+        marker_6f7ec945e0965de01560e71744a155f7.bindPopup(popup_afd6007facfdab44001ff66e13b5c14d)
+        ;
+
+        
+    
+    
+            var rectangle_412cc34aadecb1ee5deb13b61e023c3c = L.rectangle(
+                [[33.9370293099099, -118.27796790226584], [34.161776890090096, -117.98453489773415]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_d1ea18c2a36061527866b3b3eb50f63e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be0772c54de61701ac8f8b20d10fa609 = $(`<div id="html_be0772c54de61701ac8f8b20d10fa609" style="width: 100.0%; height: 100.0%;">Monterey Park, CA</div>`)[0];
+                popup_d1ea18c2a36061527866b3b3eb50f63e.setContent(html_be0772c54de61701ac8f8b20d10fa609);
+            
+        
+
+        rectangle_412cc34aadecb1ee5deb13b61e023c3c.bindPopup(popup_d1ea18c2a36061527866b3b3eb50f63e)
+        ;
+
+        
+    
+    
+            var marker_cf39e3c03651ca0ba6a0072e40cf8e6a = L.marker(
+                [34.0494031, -118.1312514],
+                {
+}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_f7b25acdd4379ab1832bce717a1429fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1871b2031ee42f5c1078e570efa054fb = $(`<div id="html_1871b2031ee42f5c1078e570efa054fb" style="width: 100.0%; height: 100.0%;">Monterey Park, CA</div>`)[0];
+                popup_f7b25acdd4379ab1832bce717a1429fc.setContent(html_1871b2031ee42f5c1078e570efa054fb);
+            
+        
+
+        marker_cf39e3c03651ca0ba6a0072e40cf8e6a.bindPopup(popup_f7b25acdd4379ab1832bce717a1429fc)
+        ;
+
+        
+    
+    
+            var rectangle_ba47b57ff3c9a0d44f8c0e388cabdd6c = L.rectangle(
+                [[35.877694909909906, -87.16606737540492], [36.49558609009009, -86.40428662459507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_1582e66ff3140e5f81d77a83fc2ee0a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eba7a8e71bd068a5982a1e85f3ad84be = $(`<div id="html_eba7a8e71bd068a5982a1e85f3ad84be" style="width: 100.0%; height: 100.0%;">Nashville, TN</div>`)[0];
+                popup_1582e66ff3140e5f81d77a83fc2ee0a0.setContent(html_eba7a8e71bd068a5982a1e85f3ad84be);
+            
+        
+
+        rectangle_ba47b57ff3c9a0d44f8c0e388cabdd6c.bindPopup(popup_1582e66ff3140e5f81d77a83fc2ee0a0)
+        ;
+
+        
+    
+    
+            var marker_dfee4cbd888fa9292da4429c5855f53b = L.marker(
+                [36.186640499999996, -86.785177],
+                {
+}
+            ).addTo(map_345b9bed359488325ec3f042ec66a838);
+        
+    
+        var popup_7ad5bba61213b52fb3c4f0cbe2617e29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62ce3804ac2e3185d47c3670deec67df = $(`<div id="html_62ce3804ac2e3185d47c3670deec67df" style="width: 100.0%; height: 100.0%;">Nashville, TN</div>`)[0];
+                popup_7ad5bba61213b52fb3c4f0cbe2617e29.setContent(html_62ce3804ac2e3185d47c3670deec67df);
+            
+        
+
+        marker_dfee4cbd888fa9292da4429c5855f53b.bindPopup(popup_7ad5bba61213b52fb3c4f0cbe2617e29)
+        ;
+
+        
+    
+</script>
+</html>
